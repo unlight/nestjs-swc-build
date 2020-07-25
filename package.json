@@ -7,6 +7,8 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
+    "swc:build": "swc src -d ./dist",
+    "swc:run": "swc src -d ./dist && node dist/main.js",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -31,8 +33,8 @@
     "@nestjs/cli": "^6.13.2",
     "@nestjs/schematics": "^6.8.1",
     "@nestjs/testing": "^6.10.14",
-    "@swc/cli": "^0.1.23",
-    "@swc/core": "^1.1.23",
+    "@swc/cli": "^0.1.26",
+    "@swc/core": "^1.2.7",
     "@types/express": "^4.17.2",
     "@types/jest": "25.1.1",
     "@types/node": "^13.1.6",
@@ -43,13 +45,13 @@
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-import": "^2.19.1",
     "jest": "^24.9.0",
-    "prettier": "^1.18.2",
+    "prettier": "^2.0.5",
     "supertest": "^4.0.2",
     "ts-jest": "25.1.0",
     "ts-loader": "^6.2.1",
     "ts-node": "^8.6.0",
     "tsconfig-paths": "^3.9.0",
-    "typescript": "^3.7.4"
+    "typescript": "^3.9.7"
   },
   "jest": {
     "moduleFileExtensions": [

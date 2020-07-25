@@ -1,12 +1,17 @@
 {
   "jsc": {
+    "loose": true,
     "parser": {
       "syntax": "typescript",
       "tsx": false,
       "decorators": true,
-      "dynamicImport": false
+      "dynamicImport": false,
+      "decoratorsBeforeExport": false
     },
-    "target": "es2018"
+    "transform": {
+      "legacyDecorator": true
+    },
+    "target": "es2017"
   },
   "module": {
     "type": "commonjs"
