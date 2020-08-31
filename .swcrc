@@ -4,12 +4,11 @@
     "parser": {
       "syntax": "typescript",
       "tsx": false,
-      "decorators": true,
-      "dynamicImport": false,
-      "decoratorsBeforeExport": false
+      "decorators": true
     },
     "transform": {
-      "legacyDecorator": true
+      "legacyDecorator": true,
+      "decoratorMetadata": true
     },
     "target": "es2017"
   },
